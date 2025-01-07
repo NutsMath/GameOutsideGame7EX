@@ -57,12 +57,14 @@
                 validPasswords: ["นี่คือภารกิจของเจ้า"]
             },
             { 
-                description: "กระดาษนั่นคือดายอิ้งแมสเสจของผู้ตาย สิ่งที่ต้องการรู้ก็คือ Who is a KIDNAPPER?", 
-                validPasswords: ["MAI"]
+                description: "กระดาษนั่นคือดายอิ้งแมสเสจของผู้ตาย สิ่งที่ต้องการรู้ก็คือ 
+                    Who is a KIDNAPPER?", 
+                validPasswords: ["MAI", "Mai"]
             },
             { 
-                description: "ยินดีด้วย คุณทำได้ดีมากเหล่านักสืบ", 
-                validPasswords: ["ไก่แจ้"]
+                description: "ให้ตัวแทนในกลุ่มหนึ่งคนลุกขึ้น และเดินไปชี้หน้าพร้อมบอกครูณัฏฐ์ว่า
+                    คนร้าย ก็คือแกนั่นแหละ จากนั้นรอฟังบางอย่างจากครูณัฏฐ์", 
+                validPasswords: ["สำเร็จแล้ว"]
             }
         ];
 
@@ -78,7 +80,8 @@
 
         function showSummary() {
             let totalAttempts = attempts.reduce((sum, attempts) => sum + attempts, 0);
-            let summary = "จำนวนครั้งที่ตอบผิดในแต่ละ LEVEL:<br>";
+            let summary = "ยินดีด้วย คุณทำได้ดีมากเหล่านักสืบ
+                และนี่คือจำนวนครั้งที่ตอบผิดในแต่ละ LEVEL:<br>";
             for (let i = 0; i < attempts.length; i++) {
                 summary += `LEVEL ${i + 1}: ${attempts[i]} ครั้ง<br>`;
             }
